@@ -71,7 +71,7 @@ proto.columnPack = function( rect ) {
   for ( var i=0; i < this.spaces.length; i++ ) {
     var space = this.spaces[i];
     var canFitInSpaceColumn = space.x <= rect.x &&
-      space.x + space.width >= rect.x + rect.width &&
+    Math.floor(space.x + space.width) >= Math.floor(rect.x + rect.width) && // flooring numbers as the difference is small eg 0.01
       space.height >= rect.height - 0.01; // fudge number for rounding error
     if ( canFitInSpaceColumn ) {
       rect.y = space.y;
