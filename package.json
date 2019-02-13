@@ -5,7 +5,7 @@
   "main": "js/packery.js",
   "dependencies": {
     "get-size": "^2.0.2",
-    "outlayer": "^2.0.0"
+    "outlayer": "git+https://github.com/lucidworks-dxos/outlayer.git#master"
   },
   "devDependencies": {
     "chalk": "^1.1.1",
